@@ -1,36 +1,29 @@
-# vue auth firebase🔥 vuex with progressive web apps
+# vuetify auth firebase🔥 vuex with progressive web apps
 
-> vue authentication firebase🔥 
+> vue authentication firebase🔥
 
 ![alt tag](https://i.imgur.com/5AnRW5j.png)
 
-Simplified Firebase authentication for vue projects with support for Facebook & Google login & Github & Twitter and with support  Progressive Web Apps
+Simplified Firebase authentication for vue projects with support for Facebook & Google login & Github & Twitter and with support Progressive Web Apps
 
 ## Config
+
 ### Step 1
-Firebase Auth Provides Method Email/Password,Google,Facebook,Github,Twitter Enabled  [Firebase console](https://console.firebase.google.com/) 
+
+Firebase Auth Provides Method Email/Password,Google,Facebook,Github,Twitter Enabled [Firebase console](https://console.firebase.google.com/)
 
 ### Step 2
-Initialize Firebase At ``main.js`` [Firebase Credentials](https://console.firebase.google.com/)
-``` bash
-firebase.initializeApp({
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: ''
-})
-```
 
+Initialize Firebase By generating `dev.env.js` from `dev.env.example.js` and adding the [Firebase Credentials](https://console.firebase.google.com/)
 
 ## Installation
 
-``` bash
+```bash
 # Git Clone Project
-git clone git@github.com:aofdev/vue-firebase-auth-vuex.git
+git clone git@github.com:valdrox/vuetify-firebase-starter.git
 
 # Cd project
-cd vue-firebase-auth-vuex
+cd vuetify-firebase-starter
 
 # install dependencies
 npm install || yarn install
@@ -43,4 +36,3 @@ npm run build || yarn build
 
 
 ```
-
