@@ -42,7 +42,10 @@ const uiConfig = {
     // },
     {
       provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      scopes: ["https://www.googleapis.com/auth/plus.login"]
+      scopes: ["https://www.googleapis.com/auth/plus.login"],
+      customParameters: {
+        prompt: "select_account"
+      }
     },
     {
       provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
