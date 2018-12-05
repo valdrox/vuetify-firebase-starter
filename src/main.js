@@ -26,7 +26,11 @@ new Vue({
     firebaseApp.auth().onAuthStateChanged(user => {
       if (user) {
         this.$store.dispatch("autoSignIn", user);
-        this.$router.push("/profile");
+        if (this.$router.currentRoute.query.redirect) {
+          this.$router.replace(this.$router.currentRoute.query.redirect);
+        } else {
+          this.$router.replace("/");
+        }
       }
     });
   },

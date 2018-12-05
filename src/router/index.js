@@ -8,7 +8,7 @@ import AuthGuard from "./auth-guard";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: "/",
@@ -19,7 +19,7 @@ export default new Router({
       path: "/profile",
       name: "Profile",
       component: Profile,
-      beforeEnter: AuthGuard,
+      meta: { requiresAuth: true },
     },
     {
       path: "/auth",
@@ -29,3 +29,7 @@ export default new Router({
   ],
   mode: "history",
 });
+
+router.beforeEach(AuthGuard);
+
+export default router;
