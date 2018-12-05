@@ -40,7 +40,7 @@
           to="/"
           tag="span"
           style="cursor: pointer"
-        >Firebase Auth Vuex</router-link>
+        >Vuetify Firebase Starter</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
